@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Jogos from './pages/jogos.vue'
+import Jogos from './pages/Jogos.vue'
 import NotFound from './pages/NotFound.vue'
 
 Vue.config.productionTip = false
