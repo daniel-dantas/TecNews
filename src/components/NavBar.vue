@@ -6,22 +6,21 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 
-                <li v-for="link in links" v-bind:key="link"><a v-bind:href="'/'+link">{{link}}</a></li>
+                <li v-for="link in links" v-bind:key="link.caminho"><a v-bind:href="link.caminho">{{link.nome}}</a></li>
             </ul>
             </div>
         </nav>
 
         <ul class="sidenav blue darken-3" id="mobile-demo">
-            <li v-for="link in links" v-bind:key="link"><a style="color: white" v-bind:href="'/'+link">Sass</a></li>
+            <li><a style="color: white" href="/">Pagina Inicial</a></li>
+            <li v-for="link in links" v-bind:key="link.caminho"><a style="color: white" v-bind:href="link.caminho">{{link.nome}}</a></li>
         </ul>
     </div>
 </template>
 <script>
 
 export default {
-    props:{
-        links: []
-    },
+    props: ['links'],
     name: 'navbar'
 }
 </script>

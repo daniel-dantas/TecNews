@@ -15,7 +15,11 @@ export default {
   },
   data: () => {
     return {
-      links: ['jogos']
+      links: [
+        {nome: 'Jogos', caminho: '/jogos'},
+        {nome: 'Cinema', caminho: '/cinema'},
+        {nome: 'Vestibular', caminho: '/vestibular'},
+      ]
     }
   }
 }
