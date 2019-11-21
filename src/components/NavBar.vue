@@ -7,8 +7,12 @@
                     <a  href="/" class="brand-logo"><img id="logo" v-bind:src="urlLogo"></a>
                 </div>
                 <div class="col s12 m11">
+                    
                     <a href="#" data-target="mobile-demo"  class="sidenav-trigger menu"><i class="material-icons">menu</i></a>
+                        
+                        
                         <ul class="right hide-on-med-and-down">
+                            <li><a class="link" href="/">Pagina Inicial</a></li>
                             <li v-for="link in links" v-bind:key="link.caminho"><a class="link" v-bind:href="link.caminho">{{link.nome}}</a></li>
                         </ul>
                     </div>
@@ -26,7 +30,7 @@
 <script>
 
 export default {
-    // Links será um array com todos os links, e UrlLogo é a url de onde está a logo 
+    // Links será um array com todos os links e nome dos links, e UrlLogo é a url de onde está a logo 
     props: ['links', 'urlLogo'],
     name: 'navbar'
 }

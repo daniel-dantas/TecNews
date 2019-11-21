@@ -1,29 +1,42 @@
 <template>
     <div id="app">
-        <NavBar v-bind:links="links" v-bind:urlLogo="urlLogo"></NavBar>
-        <br>
-        <div>
-            <h2>Jogos</h2>
-        </div>
+        <NavBar v-bind:links="navbar.links" v-bind:urlLogo="navbar.urlLogo"></NavBar>
+        <div class="row">
+            <div class="col s12 m8">
+                <Container v-bind:noticias="noticias" tituloContainer="Jogos"></Container>
+            </div>
+            <div class="col s12 m4">
+                <Container v-bind:noticias="noticias" tituloContainer="Últimas Noticias"></Container>
+            </div>
+      </div>
+        
     </div>
 </template>
 <script>
 
 import NavBar from '../components/NavBar'
+import Container from '../components/Container'
 export default {
     name: 'Jogos',
     components: {
-        NavBar
+        NavBar,
+        Container
     },
     data: () => {
         return {
-            links: [
-                {nome: 'Jogos', caminho: '/jogos'},
-                {nome: 'Cinema', caminho: '/cinema'},
-                {nome: 'Vestibular', caminho: '/vestibular'},
-
-            ],
-            urlLogo: 'https://vuejs.org/images/logo.png'
+            navbar: {
+                links: [
+                    {nome: 'Jogos', caminho: '/jogos'},
+                    {nome: 'Cinema', caminho: '/cinema'},
+                    {nome: 'Vestibular', caminho: '/vestibular'},
+                ],
+                urlLogo: 'https://vuejs.org/images/logo.png'
+            },
+            noticias: [
+                {titulo: 'Titulo1', descricao: 'Descricao1', link: '#'},
+                {titulo: 'Titulo2', descricao: 'Descricao2', link: '#'},
+                {titulo: 'Titulo3', descricao: 'Descricao3', link: '#'},    
+            ]
         }
     }
 }
