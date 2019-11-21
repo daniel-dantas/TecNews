@@ -1,0 +1,27 @@
+{
+    "tecnologia": {
+        "method": "GET",
+        "url": "http://rss.uol.com.br/feed/tecnologia.xml",
+        "headers": {"content-type": "application/json;charset=utf-8"}
+      },
+      "jogos": {
+        "method": "GET",
+        "url": "http://rss.uol.com.br/feed/jogos.xml",
+        "headers": {"content-type": "application/json"}
+      },
+      "cinema": {
+        "method": "GET",
+        "url": "http://rss.uol.com.br/feed/cinema.xml",
+        "headers": {"content-type": "application/json"}
+      },
+      "vestibular": {
+        "method": "GET",
+        "url": "http://rss.uol.com.br/feed/vestibular.xml",
+        "headers": {"content-type": "application/json"}
+      },
+      "economia": {
+        "method": "GET",
+        "url": "http://rss.uol.com.br/feed/economia.xml",
+        "headers": {"content-type": "application/json;charset=utf-8"}
+      }
+}

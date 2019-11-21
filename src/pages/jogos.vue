@@ -1,9 +1,9 @@
 <template>
     <div id="app">
-        <NavBar v-bind:links="links"></NavBar>
+        <NavBar v-bind:links="links" v-bind:urlLogo="urlLogo"></NavBar>
         <br>
         <div>
-            <h2>Teste</h2>
+            <h2>Jogos</h2>
         </div>
     </div>
 </template>
@@ -22,7 +22,8 @@ export default {
                 {nome: 'Cinema', caminho: '/cinema'},
                 {nome: 'Vestibular', caminho: '/vestibular'},
 
-            ]
+            ],
+            urlLogo: 'https://vuejs.org/images/logo.png'
         }
     }
 }
