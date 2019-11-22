@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+      <router-view></router-view>
       <NavBar v-bind:links="navbar.links" v-bind:urlLogo="navbar.urlLogo"></NavBar>
       <div class="row">
         <div class="col s12 m4">
@@ -9,7 +10,7 @@
             <Container v-bind:noticias="noticias" tituloContainer="Tecnologia"></Container>
         </div>
       </div>
-
+      
   </div>
 </template>
 <script>

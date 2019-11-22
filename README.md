@@ -11,7 +11,7 @@ npm install
 npm run serve
 ```
 
-### Rodar o servidor do node
+### Rodar o servidor do node em outra aba do terminal
 ```
 nodemon ./NodeAPI/app.js
 ```

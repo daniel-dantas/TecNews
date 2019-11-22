@@ -12,8 +12,8 @@
                         
                         
                         <ul class="right hide-on-med-and-down">
-                            <li><a class="link" href="/">Pagina Inicial</a></li>
-                            <li v-for="link in links" v-bind:key="link.caminho"><a class="link" v-bind:href="link.caminho">{{link.nome}}</a></li>
+                            <li><router-link class="link" to="/">Pagina Inicial</router-link></li>
+                            <li v-for="link in links" v-bind:key="link.caminho"><router-link class="link" v-bind:to="link.caminho">{{link.nome}}</router-link></li>
                         </ul>
                     </div>
                 </div>
@@ -22,8 +22,8 @@
         </nav>
 
         <ul class="sidenav white" id="mobile-demo">
-            <li><a class="link" href="/">Pagina Inicial</a></li>
-            <li v-for="link in links" v-bind:key="link.caminho"><a class="link" v-bind:href="link.caminho">{{link.nome}}</a></li>
+            <li><router-link class="link" to="/">Pagina Inicial</router-link></li>
+            <li v-for="link in links" v-bind:key="link.caminho"><router-link class="link" v-bind:to="link.caminho">{{link.nome}}</router-link></li>
         </ul>
     </div>
 </template>
