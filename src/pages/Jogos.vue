@@ -2,11 +2,11 @@
     <div id="app">
         <NavBar v-bind:links="navbar.links" v-bind:urlLogo="navbar.urlLogo"></NavBar>
         <div class="row">
-            <div class="col s12 m8">
-                <Container v-bind:noticias="noticias" tituloContainer="Jogos"></Container>
-            </div>
             <div class="col s12 m4">
                 <Container v-bind:noticias="noticias" tituloContainer="Últimas Noticias"></Container>
+            </div>
+            <div class="col s12 m8">
+                <Container v-bind:noticias="noticias" tituloContainer="Jogos"></Container>
             </div>
       </div>
         
