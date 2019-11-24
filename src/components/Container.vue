@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col s12">
                 <div class="card">
-                    
                     <div class="card-content">
                         <span><h4>{{tituloContainer}}</h4></span>
                         <CardNoticia v-for="noticia in noticias" v-bind:key="noticia.titulo" v-bind:noticia="noticia"></CardNoticia>

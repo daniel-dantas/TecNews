@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-        
       <div class="row">
         <div class="col s12 m4">
             <Container v-bind:noticias="noticias" tituloContainer="Últimas Noticias"></Container>
@@ -14,6 +13,7 @@
 <script>
 
 import Container from '../components/Container'
+import NotTecnologia from '../services/NotTecnologia'
 
 export default {
     components:{
@@ -21,14 +21,13 @@ export default {
     },
     data: () => {
     return {
-      noticias: [
-        {titulo: 'Titulo1', descricao: 'Descricao1', link: '#'},
-        {titulo: 'Titulo2', descricao: 'Descricao2', link: '#'},
-        {titulo: 'Titulo3', descricao: 'Descricao3', link: '#'},
-      ]
-
-      
+      noticias: []
     }
+  },
+  mounted(){
+    NotTecnologia.read().then(res => {
+      this.noticias = res
+    })
   }
 }
 </script>

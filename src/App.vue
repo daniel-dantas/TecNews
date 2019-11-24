@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app">  
       <NavBar v-bind:links="navbar.links" v-bind:urlLogo="navbar.urlLogo"></NavBar>
       <router-view></router-view>
   </div>
@@ -16,17 +16,16 @@ export default {
   data: ()=>{
     return {
       navbar: {
-      links: [
-        {nome: 'Jogos', caminho: '/jogos'},
-        {nome: 'Cinema', caminho: '/cinema'},
-        {nome: 'Vestibular', caminho: '/vestibular'},
-      ],
+        links: [
+          {nome: 'Jogos', caminho: '/jogos'},
+          {nome: 'Cinema', caminho: '/cinema'},
+          {nome: 'Vestibular', caminho: '/vestibular'},
+        ],
         urlLogo: 'https://vuejs.org/images/logo.png'
-      }
+      },
+      noticias: []
     }
-  }
-  ,
-
+  },
   
 }
 </script>
