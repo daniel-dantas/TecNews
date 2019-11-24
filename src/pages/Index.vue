@@ -1,10 +1,7 @@
 <template>
     <div id="app">
       <div class="row">
-        <div class="col s12 m4">
-            <Container v-bind:noticias="noticias" tituloContainer="Últimas Noticias"></Container>
-        </div>
-        <div class="col s12 m8">
+        <div class="col s12 m12">
             <Container v-bind:noticias="noticias" tituloContainer="Tecnologia"></Container>
         </div>
       </div>
@@ -14,6 +11,7 @@
 
 import Container from '../components/Container'
 import NotTecnologia from '../services/NotTecnologia'
+import xmlIntoJson from 'xmlintojson'
 
 export default {
     components:{
@@ -25,8 +23,10 @@ export default {
     }
   },
   mounted(){
-    NotTecnologia.read().then(res => {
-      this.noticias = res
+    NotTecnologia.read().then(resposta => {
+      let json = xmlIntoJson(resposta.data)
+      let noticias = json.rss.channel.item.filter(not => {return not!=null})
+      this.noticias = noticias
     })
   }
 }

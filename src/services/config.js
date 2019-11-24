@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export default axios.create({
-    baseURL: "http://localhost:8000/noticias/"
+    baseURL: "https://cors-anywhere.herokuapp.com/https://g1.globo.com/rss/g1/"
 })

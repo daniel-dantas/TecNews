@@ -1,5 +1,8 @@
 # Pequeno Projeto
-Projeto utiliza o VUEJS v2 e NodeJS como Api Rest
+Projeto utiliza o VUEJS v2
+
+Esse projeto tem o intuito de minerar noticias sobre tecnologia, para que o usuario possa ter todas as
+noticias de forma rapida e fácil.
 
 ## Instalar dependências
 ```
@@ -11,10 +14,6 @@ npm install
 npm run serve
 ```
 
-### Rodar o servidor do node em outra aba do terminal
-```
-nodemon ./NodeAPI/app.js
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

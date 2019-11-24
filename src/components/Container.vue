@@ -5,7 +5,7 @@
                 <div class="card">
                     <div class="card-content">
                         <span><h4>{{tituloContainer}}</h4></span>
-                        <CardNoticia v-for="noticia in noticias" v-bind:key="noticia.titulo" v-bind:noticia="noticia"></CardNoticia>
+                        <CardNoticia v-for="noticia in noticias" v-bind:key="noticia.titulo" v-bind:noticia="noticia | convertPadrao()"></CardNoticia>
                     </div>
                 </div>
             </div>
@@ -20,6 +20,12 @@ export default {
     props: ['noticias', 'tituloContainer'],
     components: {
         CardNoticia
+    },
+    filters: {
+        convertPadrao: (not)=>{
+            
+            return {titulo: not.title._text, descricao: "", link: not.link._text}
+        }
     }
 }
 </script>
