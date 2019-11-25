@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Jogos from './pages/Jogos.vue'
 import Index from './pages/Index.vue'
+import CienciaSaude from './pages/CienciaSaude.vue'
 // import NotFound from './pages/NotFound.vue'
 import VueRouter from 'vue-router'
 
@@ -11,8 +11,8 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 const routes = [
-  {path: '/jogos', component: Jogos},
-  {path: '/', component: Index}
+  {path: '/', component: Index},
+  {path: '/cienciaSaude', component: CienciaSaude}
 ]
 
 const router = new VueRouter({

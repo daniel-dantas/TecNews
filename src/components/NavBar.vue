@@ -1,7 +1,7 @@
 <template>
     <div id="navbar">
         <nav>
-            <div class="nav-wrapper  white">
+            <div class="nav-wrapper  teal lighten-2">
             <div class="row">
                 <div class="col s12 m1 center">
                     <a  href="/" class="brand-logo"><img id="logo" v-bind:src="urlLogo"></a>
@@ -21,7 +21,7 @@
             
         </nav>
 
-        <ul class="sidenav white" id="mobile-demo">
+        <ul class="sidenav teal lighten-2" id="mobile-demo">
             <li><router-link class="link" to="/">Pagina Inicial</router-link></li>
             <li v-for="link in links" v-bind:key="link.caminho"><router-link class="link" v-bind:to="link.caminho">{{link.nome}}</router-link></li>
         </ul>
@@ -45,11 +45,11 @@ export default {
     }
 
     li a.link{
-        color: #006064;
+        color: whitesmoke;
     }
     
     .menu{
-        color: #006064;
+        color: whitesmoke;
     }
 
 </style>
