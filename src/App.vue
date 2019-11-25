@@ -22,8 +22,7 @@ export default {
       navbar: {
         links: [
           {nome: 'Ciência Saude', caminho: '/CienciaSaude'},
-          {nome: 'Cinema', caminho: '/cinema'},
-          {nome: 'Vestibular', caminho: '/vestibular'},
+          {nome: 'Mundo', caminho: '/mundo'}
         ],
         urlLogo: 'https://vuejs.org/images/logo.png'
       },

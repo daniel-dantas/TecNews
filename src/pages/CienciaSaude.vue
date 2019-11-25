@@ -1,10 +1,7 @@
 <template>
     <div id="app">
         <div class="row">
-            <div class="col s12 m4">
-                <Container v-bind:noticias="noticias" tituloContainer="Últimas Noticias"></Container>
-            </div>
-            <div class="col s12 m8">
+            <div class="col s12">
                 <Container v-bind:noticias="noticias" tituloContainer="Ciência e saude"></Container>
             </div>
       </div>
