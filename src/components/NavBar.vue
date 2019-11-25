@@ -22,8 +22,8 @@
         </nav>
 
         <ul class="sidenav teal lighten-2" id="mobile-demo">
-            <li><router-link class="link" to="/">Pagina Inicial</router-link></li>
-            <li v-for="link in links" v-bind:key="link.caminho"><router-link class="link" v-bind:to="link.caminho">{{link.nome}}</router-link></li>
+            <li><router-link class="link" style="color:whitesmoke" to="/">Pagina Inicial</router-link></li>
+            <li v-for="link in links" v-bind:key="link.caminho"><router-link class="link" style="color:whitesmoke" v-bind:to="link.caminho">{{link.nome}}</router-link></li>
         </ul>
     </div>
 </template>

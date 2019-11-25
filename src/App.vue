@@ -2,7 +2,7 @@
   <div id="app">  
       <NavBar v-bind:links="navbar.links" v-bind:urlLogo="navbar.urlLogo"></NavBar>
       <router-view></router-view>
-      <Footer copy="Noticias Quentinhas"></Footer>
+      <Footer :data="footer"></Footer>
   </div>
 </template>
 <script>
@@ -27,7 +27,17 @@ export default {
         ],
         urlLogo: 'https://vuejs.org/images/logo.png'
       },
-      noticias: []
+      footer: {
+        copy: "Tecno Noticias",
+        titulo: "Desenvolvedor: Daniel Dantas",
+        descricao: "Aqui uma breve descricao do Software",
+        links: [
+          {nome: "Facebook", caminho: ""},
+          {nome: "GitHub", caminho: ""}
+        ]
+        
+
+      }
     }
   },
   

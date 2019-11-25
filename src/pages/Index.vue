@@ -1,11 +1,8 @@
 <template>
     <div id="app">
       <div class="row">
-        <div class="col s12 m4">
-            <Container v-bind:noticias="ultimasNoticias" tituloContainer="Ultimas Noticias"></Container>
-        </div>
-        <div class="col s12 m8">
-            <Container v-bind:noticias="noticias" tituloContainer="Tecnologia"></Container>
+        <div class="col s12">
+          <Container v-bind:noticias="noticias" tituloContainer="Tecnologia"></Container>
         </div>
       </div>
     </div>
@@ -31,8 +28,8 @@ export default {
     NotTecnologia.read().then(resposta => {
       let json = xmlIntoJson(resposta.data)
       let noticias = json.rss.channel.item.filter(not => {return not!=null})
-      this.ultimasNoticias = noticias.slice(0,3)
-      this.noticias = noticias.slice(3, noticias.length)
+      // this.ultimasNoticias = noticias.slice(0,3)
+      this.noticias = noticias//noticias.slice(3, noticias.length)
     })
 
 
