@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        <footer class="page-footer teal lighten-2">
+        <footer class="page-footer grey darken-4">
             <div class="container">
                 <div class="row">
                     <div class="col s12 m6">

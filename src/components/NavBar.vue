@@ -1,12 +1,12 @@
 <template>
     <div id="navbar">
         <nav>
-            <div class="nav-wrapper  teal lighten-2">
+            <div class="nav-wrapper grey darken-4">
             <div class="row">
-                <div class="col s12 m1 center">
+                <div class="col s12 m2 center">
                     <a  href="/" class="brand-logo"><img id="logo" v-bind:src="urlLogo"></a>
                 </div>
-                <div class="col s12 m11">
+                <div class="col s12 m10">
                     
                     <a href="#" data-target="mobile-demo"  class="sidenav-trigger menu"><i class="material-icons">menu</i></a>
                         
@@ -21,7 +21,7 @@
             
         </nav>
 
-        <ul class="sidenav teal lighten-2" id="mobile-demo">
+        <ul class="sidenav grey darken-4" id="mobile-demo">
             <li><router-link class="link" style="color:whitesmoke" to="/">Pagina Inicial</router-link></li>
             <li v-for="link in links" v-bind:key="link.caminho"><router-link class="link" style="color:whitesmoke" v-bind:to="link.caminho">{{link.nome}}</router-link></li>
         </ul>
@@ -41,7 +41,7 @@ export default {
     @import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
     
     a #logo{
-        max-width: 60px;
+        width: 110px;
     }
 
     li a.link{

@@ -24,7 +24,7 @@ export default {
           {nome: 'Ciência Saude', caminho: '/CienciaSaude'},
           {nome: 'Mundo', caminho: '/mundo'}
         ],
-        urlLogo: 'https://vuejs.org/images/logo.png'
+        urlLogo: 'logo.png'
       },
       footer: {
         copy: "Tecno Noticias",
